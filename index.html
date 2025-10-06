@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Homepage</title>
+    <title>Hochschule Kempten - Wirtschaftsingenieurwesen</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #121212;
+            color: #e0e0e0;
         }
         header {
-            background-color: #0078d7;
-            color: white;
+            background-color: #1f1f1f;
+            color: #f4f4f4;
             padding: 20px 0;
             text-align: center;
         }
@@ -22,59 +25,132 @@
             font-size: 2.5em;
         }
         nav {
-            background-color: #005a9e;
-            color: white;
+            background-color: #333;
             display: flex;
             justify-content: center;
             padding: 10px 0;
         }
         nav a {
-            color: white;
+            color: #e0e0e0;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #0078d7;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f4f4f4;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
         }
         .content {
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
-        .content h2 {
-            font-size: 2em;
+        .box h2 {
+            font-size: 1.8em;
+            color: #0078d7;
             margin-bottom: 10px;
         }
-        .content p {
-            font-size: 1.2em;
-            color: #333;
+        .box p {
+            font-size: 1.1em;
+            color: #ccc;
+            line-height: 1.6;
+        }
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 10px;
         }
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
             text-align: center;
             padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #0078d7;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Willkommen auf meiner Homepage</h1>
+        <h1>Hochschule Kempten</h1>
+        <p>Studiengang Wirtschaftsingenieurwesen</p>
     </header>
     <nav>
-        <a href="#about">Über mich</a>
-        <a href="#services">Dienstleistungen</a>
+        <a href="#about">Über den Studiengang</a>
+        <a href="#career">Karrierechancen</a>
         <a href="#contact">Kontakt</a>
     </nav>
-    <div class="content">
-        <h2>Hallo, Welt!</h2>
-        <p>Dies ist eine einfache Homepage, die mit HTML und CSS erstellt wurde. Du kannst diesen Text anpassen, um deine eigene Website zu erstellen.</p>
+    <div class="hero">
+        <h2>Wirtschaft trifft Technik</h2>
+    </div>
+    <div class="content" id="about">
+        <div class="box">
+            <h2>Über den Studiengang</h2>
+            <p>Der Studiengang Wirtschaftsingenieurwesen an der Hochschule Kempten verbindet technisches Wissen mit betriebswirtschaftlichem Know-how. Hier lernen Sie, wie Sie innovative Lösungen für die Herausforderungen der modernen Wirtschaft entwickeln.</p>
+            <img src="https://via.placeholder.com/400x200" alt="Studierende in der Hochschule">
+        </div>
+        <div class="box">
+            <h2>Studieninhalte</h2>
+            <p>Die Studieninhalte umfassen unter anderem Mathematik, Physik, Betriebswirtschaftslehre, Produktionsmanagement und Digitalisierung. Ein besonderer Fokus liegt auf der interdisziplinären Zusammenarbeit.</p>
+            <img src="https://via.placeholder.com/400x200" alt="Studieninhalte">
+        </div>
+    </div>
+    <div class="content" id="career">
+        <div class="box">
+            <h2>Karrierechancen</h2>
+            <p>Absolventen sind in der Industrie, im Management und in der Forschung gefragt. Sie können in Bereichen wie Produktion, Logistik, Projektmanagement und vielen weiteren tätig werden.</p>
+            <img src="https://via.placeholder.com/400x200" alt="Karrierechancen">
+        </div>
+        <div class="box">
+            <h2>Berufsfelder</h2>
+            <p>Mit einem Abschluss in Wirtschaftsingenieurwesen stehen Ihnen zahlreiche Türen offen. Sie können in internationalen Unternehmen arbeiten, innovative Start-ups gründen oder in der Forschung tätig werden.</p>
+            <img src="https://via.placeholder.com/400x200" alt="Berufsfelder">
+        </div>
+    </div>
+    <div class="content" id="contact">
+        <div class="box">
+            <h2>Kontakt</h2>
+            <p>Hochschule Kempten<br>
+            Bahnhofstraße 61<br>
+            87435 Kempten (Allgäu)</p>
+            <p>Email: <a href="mailto:info@hs-kempten.de">info@hs-kempten.de</a></p>
+            <p>Telefon: +49 831 2523 0</p>
+        </div>
     </div>
     <footer>
-        &copy; 2025 Meine Homepage. Alle Rechte vorbehalten.
+        <p>&copy; 2025 Hochschule Kempten - Wirtschaftsingenieurwesen. Alle Rechte vorbehalten.</p>
+        <p><a href="#contact">Kontaktieren Sie uns</a></p>
     </footer>
 </body>
 </html>
